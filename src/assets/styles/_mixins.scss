@@ -1,0 +1,25 @@
+@use './variables' as vars;
+
+@mixin vp-1359 {
+  @media (max-width: vars.$vp-desktop) {
+    @content;
+  }
+}
+
+@mixin vp-1023 {
+  @media (max-width: vars.$vp-tablet) {
+    @content;
+  }
+}
+
+@mixin vp-767 {
+  @media (max-width: vars.$vp-mobile) {
+    @content;
+  }
+}
+
+@mixin list-params-unset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

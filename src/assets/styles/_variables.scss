@@ -1,0 +1,40 @@
+// Colors
+$color-white: #FFFFFF;
+$color-black: #0A0B0B;
+$color-blue: #67A5EB;
+$color-blue-dark: #45526E;
+$color-pink: #DC5DFC;
+$color-purple-light: #B4A9FF;
+$color-purple: #6A5DC2;
+$color-gray-light: #616161;
+$color-gray: #393B3C;
+$color-gold: #A59400;
+$color-green: #308E21;
+$color-platinum: #777777;
+$color-red: #C82020;
+$color-error: #FF7575;
+$color-white-transparent-15: rgba(255, 255, 255, 0.15);
+$color-white-transparent-25: rgba(255, 255, 255, 0.25);
+$color-white-transparent-33: rgba(255, 255, 255, 0.33);
+$color-white-transparent-50: rgba(255, 255, 255, 0.5);
+$color-white-transparent-70: rgba(255, 255, 255, 0.7);
+$color-white-transparent-80: rgba(255, 255, 255, 0.8);
+$color-black-transparent-40: rgba(0, 0, 0, 0.4);
+$color-black-transparent-50: rgba(0, 0, 0, 0.5);
+$color-black-glass-transparent-50: rgba(10, 11, 11, 0.5);
+$color-black-glass-transparent-90: rgba(10, 11, 11, 0.9);
+
+// Typography
+$ff-main: "Play", "Arial", sans-serif;
+
+// Viewport
+$vp-desktop: 1359px;
+$vp-tablet: 1023px;
+$vp-mobile: 767px;
+
+// Animation
+$transition-100: 0.1s ease-in;
+$transition-300: 0.2s ease-in;
+$transition-500: 0.5s ease-in;
+$transition-800: 0.8s ease-in;
+$transition-7000: 7s ease-in;

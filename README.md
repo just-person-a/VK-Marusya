@@ -1,54 +1,101 @@
-# vk-marusya
+# ВК Маруся
 
-This template should help get you started developing with Vue 3 in Vite.
+ВК Маруся - веб-приложение Vue.js для поиска фильмов и просмотра информации о них. Приложение позволяет изучать подборки популярных фильмов, искать фильмы по названию, просматривать информацию о фильмах и трейлеры, а также сохранять понравившиеся фильмы в избранное.
 
-## Recommended IDE Setup
+Проект разработан в рамках финальной работы курса Skillbox "Vue.js".
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Описание функциональности
 
-## Recommended Browser Setup
+ВК Маруся предоставляет следующие возможности:
+- Просмотр случайного фильма и подборки популярных фильмов на главной странице
+- Поиск фильмов по названию через строку поиска
+- Просмотр списка жанров и фильмов выбранного жанра с последовательной загрузкой
+- Просмотр описания, рейтинга, жанров, года выпуска, продолжительности и дополнительной информации о фильме
+- Просмотр трейлеров с использованием YouTube Player
+- Создание аккаунта и авторизация по электронной почте и паролю
+- Просмотр данных пользователя и выход из аккаунта в личном кабинете
+- Добавление фильмов в избранное
+- Просмотр и удаление сохранённых фильмов
+- Изменение расположения и отображения элементов в зависимости от ширины экрана
+- Индикаторы загрузки и уведомления об ошибках запросов
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## Установка и начало работы
 
-## Type Support for `.vue` Imports in TS
+`git clone <URL_репозитория>` (клонировать репозиторий)
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+`cd VK-Marusya` (перейти в папку с проектом)
 
-## Customize configuration
+`npm install` (установить зависимости)
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Запуск проекта
 
-## Project Setup
+### Запуск в режиме разработчика
 
-```sh
-npm install
-```
+`npm run dev`
 
-### Compile and Hot-Reload for Development
+### Сборка проекта
 
-```sh
-npm run dev
-```
+`npm run build`
 
-### Type-Check, Compile and Minify for Production
+### Предварительный просмотр сборки проекта
 
-```sh
-npm run build
-```
+`npm run preview`
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+После запуска приложения Vite выведет адрес локального сервера в терминале.
 
-```sh
-npm run test:unit
-```
+## Используемые технологии
 
-### Lint with [ESLint](https://eslint.org/)
+### Front-end:
 
-```sh
-npm run lint
-```
+- Vue 3
+- TypeScript
+- Vue Router
+- Pinia
+- SCSS
+- Vite
+- Fetch API
+- YouTube Player
+
+### Инструменты разработки:
+
+- ESLint
+- Prettier
+
+## Требования
+
+- npm
+- Node.js
+
+## Структура проекта
+
+`public/` (статические файлы)
+
+`src/assets/` (шрифты, изображения и стили)
+
+`src/components/` (компоненты пользовательского интерфейса)
+
+`src/composables/` (переиспользуемая логика и обработка форм)
+
+`src/router/` (настройка маршрутизации)
+
+`src/stores/` (хранилища Pinia и логика работы с данными)
+
+`src/types/` (типы TypeScript)
+
+`src/views/` (страницы приложения)
+
+`src/App.vue` (корневой компонент приложения)
+
+`src/main.ts` (основной файл TypeScript)
+
+`package.json` (информация о зависимостях)
+
+## Взаимодействие с API
+
+Для получения информации о фильмах и работы с пользовательскими данными приложение использует внешний API CinemaGuide от Skillbox.
+
+Запросы выполняются с помощью Fetch API. Для авторизованных запросов используются cookie, позволяющие взаимодействовать с аккаунтом пользователя и списком избранного.
+
+## Контактная информация
+
+Казадаев Андрей (kazadaev.2001@mail.ru)

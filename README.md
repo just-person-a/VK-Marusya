@@ -21,7 +21,7 @@
 
 ## Установка и начало работы
 
-`git clone <URL_репозитория>` (клонировать репозиторий)
+`git clone https://github.com/just-person-a/VK-Marusya.git` (клонировать репозиторий)
 
 `cd VK-Marusya` (перейти в папку с проектом)
 
